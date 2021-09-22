@@ -25,7 +25,7 @@ p {
 }
 
 header{
-  border-bottom: 1px solid #ECECEC;
+  /* border-bottom: 1px solid #ECECEC; */
 }
 
 a {
@@ -70,6 +70,7 @@ footer {
 .head{
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 
 /* Логотип компании */
@@ -151,11 +152,18 @@ footer {
 /* Эффективные решения */
 
 .effective-solutions{
-  background-color: #2F303A;;
+  background-color: #2F303A;
+  max-width: 1600px;
+  height: 600px;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../foto/effect.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   letter-spacing: 0.06em;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Загаловок "эффективные решения" */
@@ -219,6 +227,32 @@ footer {
 .advantage-item{
   width: 270px;
   margin-right: 30px;
+}
+
+.advantage-item::before{
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+}
+
+.advantage-item:nth-child(1)::before{
+  background-image: url(../svg/antenna.svg);
+}
+
+.advantage-item:nth-child(2)::before{
+  background-image: url(../svg/clock.svg);
+}
+
+.advantage-item:nth-child(3)::before{
+  background-image: url(../svg/diagram.svg);
+}
+
+.advantage-item:nth-child(4)::before{
+  background-image: url(../svg/astronaut.svg);
 }
 
 .advantage-item:last-child{
@@ -333,8 +367,79 @@ footer {
   color: var(--paragraph-color);
   margin: 0;
 }
+/* Социальные ссылки "Наша команда" */
+.team-social-list{
+display: flex;
+}
+.team-social-item{
+  
+}
+
+.team-social-link{
+  content: '';
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+
+
+/* постоянные клиенты ссылки */
+.clients{
+  padding-top: 94px;
+  padding-bottom: 88px;
+}
+.clients-title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.clients-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.clients-item{
+  margin-right: 30px;
+}
+
+.clients-item:last-child{
+  margin-right: 0;
+}
+
+.clients-link{
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.clients-svg{
+  
+  
+}
 
 /* Подвал */
+.footer{
+  display: flex;
+}
+
+.footer-address{
+  margin-right: 70px;
+}
 
 .logotype{
   display: inline-block;
@@ -375,6 +480,63 @@ footer {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
 }
+/* Социальные ссылки "Присоединяйтесь" */
+
+.footer-social-title{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;;
+}
+
+.footer-social-list{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-item {
+  margin-right: 10px;
+}
+
+.footer-social-item:last-child{
+  margin-right: 0;
+}
+
+.footer-social-link{
+  content: '';
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.footer-social-link:hover{
+  background-color: var(--master-color);
+}
+
+.instagram{
+  background-image:radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/instagram-1.svg);
+}
+
+.twitter{
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/twitter-1.svg);
+}
+
+
+.facebook{
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/facebook-1.svg);
+}
+
+.linkedin{
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/linkedin-1.svg);
+}
+
 
 /* Портфолио */
 
