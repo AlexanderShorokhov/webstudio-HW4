@@ -143,11 +143,17 @@ footer {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.contact-link, .contact-link{
   color: var(--paragraph-color);
 }
+
+.contact-link:hover{
+  color: var(--master-color);
+}
+.contact-svg{
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 
 /* Эффективные решения */
 
@@ -229,30 +235,15 @@ footer {
   margin-right: 30px;
 }
 
-.advantage-item::before{
-  display: block;
-  content: '';
+.advantage-bg{
+  background-color: #F5F4FA;
   height: 120px;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #F5F4FA;
-}
-
-.advantage-item:nth-child(1)::before{
-  background-image: url(../svg/antenna.svg);
-}
-
-.advantage-item:nth-child(2)::before{
-  background-image: url(../svg/clock.svg);
-}
-
-.advantage-item:nth-child(3)::before{
-  background-image: url(../svg/diagram.svg);
-}
-
-.advantage-item:nth-child(4)::before{
-  background-image: url(../svg/astronaut.svg);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .advantage-item:last-child{
@@ -282,7 +273,6 @@ footer {
   padding-bottom: 94px;
 }
 .opportunities-title{
-  /* display: inline-block; */
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -338,6 +328,7 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 30px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .team-item:last-child{
@@ -345,7 +336,7 @@ footer {
 }
 
 .team-signature{
-  padding: 30px 0;
+  padding: 30px 0 16px 0;
 }
 
 .team-item-sudtitle{
@@ -368,23 +359,45 @@ footer {
   margin: 0;
 }
 /* Социальные ссылки "Наша команда" */
+.team-social{
+ padding-bottom: 30px;
+}
+
 .team-social-list{
-display: flex;
+  display: inline-block;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 .team-social-item{
   
+  margin-right: 10px;
+  
+}
+.team-social-item:last-child{
+  margin-right: 0;
 }
 
 .team-social-link{
-  content: '';
-  display: inline-block;
+  display: block;
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.team-social-link:hover{
+ color: #fff;
+  background-color:var(--master-color);
+  
 }
 
+.team-social-icon{
+  fill: currentColor;
+}
 
 
 /* постоянные клиенты ссылки */
@@ -400,6 +413,7 @@ display: flex;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 
 .clients-list{
@@ -410,25 +424,35 @@ display: flex;
 
 .clients-item{
   margin-right: 30px;
+  
+  
 }
 
 .clients-item:last-child{
   margin-right: 0;
 }
 
+/* клиенты ссылка */
 .clients-link{
   display: block;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  color: #AFB1B8;
   border-radius: 4px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  border: 1px solid #AFB1B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.clients-svg{
-  
+.clients-link:hover{
+  border-color: var(--master-color);
+  color: var(--master-color);
+}
+
+/* клиенты SVG иконки */
+.clients-icon{
+  fill: currentColor;
   
 }
 
@@ -514,29 +538,17 @@ display: flex;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-link:hover{
   background-color: var(--master-color);
 }
 
-.instagram{
-  background-image:radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/instagram-1.svg);
+.footer-social-icon{
+  transform: translate(60%, 60%);
+  fill:#fff;
 }
-
-.twitter{
-  background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/twitter-1.svg);
-}
-
-
-.facebook{
-  background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/facebook-1.svg);
-}
-
-.linkedin{
-  background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../svg/linkedin-1.svg);
-}
-
 
 /* Портфолио */
 
