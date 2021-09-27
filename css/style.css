@@ -140,10 +140,11 @@ footer {
 }
 
 .contact-link{
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--paragraph-color);
+  align-items: center;
 }
 
 .contact-link:hover{
@@ -158,9 +159,7 @@ footer {
 /* Эффективные решения */
 
 .effective-solutions{
-  background-color: #2F303A;
   max-width: 1600px;
-  height: 600px;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../foto/effect.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -358,22 +357,21 @@ footer {
   color: var(--paragraph-color);
   margin: 0;
 }
+
 /* Социальные ссылки "Наша команда" */
-.team-social{
- padding-bottom: 30px;
-}
 
 .team-social-list{
-  display: inline-block;
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 30px;
+  
 }
+
 .team-social-item{
-  
   margin-right: 10px;
-  
 }
+
 .team-social-item:last-child{
   margin-right: 0;
 }
@@ -390,9 +388,8 @@ footer {
 } 
 
 .team-social-link:hover{
- color: #fff;
+  color: #fff;
   background-color:var(--master-color);
-  
 }
 
 .team-social-icon{
@@ -459,6 +456,7 @@ footer {
 /* Подвал */
 .footer{
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address{
@@ -589,11 +587,13 @@ footer {
 .filter-button:hover{
   background-color: var(--master-color);
   color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filter-button:focus{
   background-color: var(--master-color);
   color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Проекты */
@@ -621,6 +621,14 @@ footer {
 
 .project-card:nth-last-child(-n+3){
   margin-bottom: 0;
+}
+
+.project-card:hover{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-card:focus{
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-heading{
